@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-29 12:44:07 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMi0xNzswODozMDozOSBBTTsyMjA2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzQ7MjAxOS0xMi0xNzswODo1MzoxOSBBTTsxOzIzMTc="/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMzM7MjAxOS0xMi0xNzswOTowNToxNyBBTTs1OzIzMTY="/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtRElRVktPRDk7MjAxOS0xMi0yOTsxMjo0NDowNyBBTTszOzI5MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Price" type="Integer" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="FinalPrice" type="Integer" array="False" size=""/>
+            <output expression="&quot;This system will be applying a discount that you will be entering below to help you have an access in automatic estimation in your product &quot;" newline="True"/>
+            <output expression="&quot;For the first step, please enter the price of your product&quot;" newline="True"/>
+            <input variable="Price"/>
+            <output expression="&quot;After that enter now the discount you would want to apply for your product make sure to but put it in decimal form just by moving the decimal point two places to the left&quot;" newline="True"/>
+            <output expression="&quot;An example of this is: 50% = .50&quot;" newline="True"/>
+            <output expression="&quot;You may now enter your chosen discount below&quot;" newline="True"/>
+            <input variable="Discount"/>
+            <assign variable="FinalPrice" expression="Price - (Price * Discount)"/>
+            <output expression="FinalPrice" newline="True"/>
+            <output expression="&quot;Above is the discounted price&quot;" newline="True"/>
+            <output expression="&quot;Thank you for using the app, come back anytime&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
